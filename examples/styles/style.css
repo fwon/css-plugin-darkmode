@@ -1,0 +1,18 @@
+:root {
+  --color1: #987786;
+  --dm__color1: #fff;
+}
+
+body {
+  font-size: 14px;
+  /* dm[color: #888;background-color: #fff;] */
+}
+.class1 {
+  width: 100px;
+  color: var(--color1);
+  /* dm[color: var(--dm__color1);] */
+}
+.class1 .class2, .class1 .class3 {
+  background-color: #ddd;
+  /* dm[ background-color: #888;] */
+}

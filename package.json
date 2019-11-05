@@ -1,0 +1,30 @@
+{
+  "name": "css-plugin-darkmode",
+  "version": "0.1.0",
+  "description": "parse css into darkmode",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "cd test && node index.js",
+    "webpack": "cd example && webpack",
+    "grunt": "cd example && grunt"
+  },
+  "keywords": [
+    "darkmode",
+    "css"
+  ],
+  "author": "fwon",
+  "license": "MIT",
+  "dependencies": {
+    "gonzales-pe": "^4.2.4"
+  },
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "grunt": "^1.0.4",
+    "grunt-contrib-less": "^2.0.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
