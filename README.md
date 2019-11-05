@@ -2,7 +2,21 @@
 
 A Preprocessor Plugin for CSS DSL(Less, Sass, SCSS).
 Write darkmode css as comments in one place, will be transformed to darkmode media;
-
+### Basic
+Write comments using `dm[]` in css which you want to add darkmode media, like
+```css
+.selector {
+  /* dm[color: #fff] */
+}
+```
+can be transformed into media like
+```css
+@media (prefers-color-scheme: dark) {
+  .selector {
+    color: #fff
+  }
+}
+```
 ### Examples
 #### 1. CSS
 **Before**
