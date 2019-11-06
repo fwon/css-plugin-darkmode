@@ -1,6 +1,6 @@
 'use strict';
 
-const cssDarkMode = require('./plugin.js');
+const cssDarkMode = require('./lib/plugin.js');
 
 (function (module, exports) {
   const PreProcessor = function (options) {

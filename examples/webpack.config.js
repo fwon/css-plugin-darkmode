@@ -1,7 +1,7 @@
 'use strict';
 
 const path = require('path');
-const CSSDarkModePlugin = require('../lib/index.js');
+const CSSDarkModePlugin = require('../index.js');
 
 module.exports = {
   mode: 'production',
