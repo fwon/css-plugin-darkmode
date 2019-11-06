@@ -116,11 +116,10 @@ body {
   }
   .class1 {
     color: @__dm__color1;
-  }
-  .class1 .class2,
-  .class1 .class3 {
-    background-color: #888;
-    background-image: url('base64:abcd');
+    .class2, .class3 {
+      background-color: #888;
+      background-image: url('base64:abcd');
+    }
   }
 }
 
