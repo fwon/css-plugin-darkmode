@@ -1,6 +1,6 @@
 {
   "name": "css-plugin-darkmode",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "parse css into darkmode",
   "main": "lib/index.js",
   "scripts": {
