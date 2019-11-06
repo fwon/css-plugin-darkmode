@@ -5,7 +5,7 @@ const path = require('path');
 const cssdm = require('../lib/plugin.js');
 
 function readFile(filename) {
-  filename = path.resolve(filename);
+  filename = path.resolve(__dirname, filename);
   return fs.readFileSync(filename).toString();
 }
 
@@ -15,14 +15,14 @@ function logTitle(type) {
 `;
 }
 
-const css = cssdm(readFile('../examples/style.css'));
-const less = cssdm(readFile('../examples/style.less'), {
+const css = cssdm(readFile('../examples/styles/style.css'));
+const less = cssdm(readFile('../examples/styles/style.less'), {
   syntax: 'less'
 });
-const sass = cssdm(readFile('../examples/style.sass'), {
+const sass = cssdm(readFile('../examples/styles/style.sass'), {
   syntax: 'sass'
 });
-const scss = cssdm(readFile('../examples/style.scss'), {
+const scss = cssdm(readFile('../examples/styles/style.scss'), {
   syntax: 'scss'
 });
 
