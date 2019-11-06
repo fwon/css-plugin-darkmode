@@ -3,9 +3,9 @@
 const cssDarkMode = require('./lib/plugin.js');
 
 (function (module, exports) {
-  const PreProcessor = function (options) {
+  function PreProcessor(options) {
     this.options = options || {};
-  };
+  }
 
   PreProcessor.prototype = {
     process: function (src, extra) {
@@ -21,12 +21,11 @@ const cssDarkMode = require('./lib/plugin.js');
     }
   };
 
-  const CSSPluginDarkMode = function (options) {
+  function CSSPluginDarkMode(options) {
     this.options = options || {};
-    // extract css parser for user
-    this.Parser = cssDarkMode;
-  };
-
+  }
+  // extract css parser for user
+  CSSPluginDarkMode.Parser = cssDarkMode;
   CSSPluginDarkMode.prototype = {
     install: function (css, pluginManager) {
       pluginManager.addPreProcessor(new PreProcessor(this.options));
