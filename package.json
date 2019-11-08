@@ -1,8 +1,12 @@
 {
   "name": "css-plugin-darkmode",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "parse css into darkmode",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fwon/css-plugin-darkmode.git"
+  },
   "scripts": {
     "test": "cd test && node index.js",
     "webpack": "cd example && webpack",
